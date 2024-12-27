@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Virtual Pharmacy</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="container">
+          
+        <header>
+            <h1>Contact Us - Virtual Pharmacy</h1>
+        </header>
+
+        <section class="contact-form">
+            <h2>We'd love to hear from you!</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+            <div id="confirmationMessage" class="hidden">
+                <p>Your message has been sent. We'll get back to you soon!</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Virtual Pharmacy</p>
+        </footer>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

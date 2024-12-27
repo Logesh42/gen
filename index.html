@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pharmacy</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Virtual Pharmacy</div>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/products.html">Products</a></li>
+            <li><a href="/cart.html">Cart</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Virtual Pharmacy Features</h1>
+
+        <!-- Photo Scanner Section -->
+        <div class="photo-scanner">
+            <h2>Scan Your Prescription Photo</h2>
+            <video id="video" width="100%" height="auto" autoplay></video> <br>
+            <button onclick="capturePhoto()">Capture Photo</button>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <p id="photo-status"></p>
+            <img id="photo-output" src="" alt="Captured Image" style="max-width: 100%; margin-top: 15px; display: none;">
+        </div>
+
+        <!-- File Upload Section -->
+        <div class="file-upload">
+            <h2>Upload Prescription File</h2>
+            <form id="upload-form">
+                <input type="file" id="file-input" name="prescription" accept=".jpg,.jpeg,.png,.pdf" required>
+                <button type="submit">  Upload Prescription</button> <br>
+                <button type="submit"><a href="/products.html">Submit</a></button>
+            </form>
+            <p id="file-status"></p>
+        </div>
+
+    </div>
+
+    <script src="home.js"></script>
+
+</body>
+</html>
